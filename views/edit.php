@@ -21,7 +21,7 @@ if ($action == 'edit' && $pagination_enabled) {
 	<form method="post" action="<?php echo $form_action; ?>">
 		
 		<div class="row">
-			<label>Name <span>*</span></label>
+			<label><?php echo __('Name'); ?> <span>*</span></label>
 			<div class="field">
 				<input type="text" class="textbox" name="tracker[name]" value="<?php echo $tracker['name']; ?>" />
 			</div>
@@ -30,7 +30,7 @@ if ($action == 'edit' && $pagination_enabled) {
 		<!-- .row -->
 		
 		<div class="row">
-			<label>URL<span>*</span></label>
+			<label><?php echo __('URL'); ?> <span>*</span></label>
 			<div class="field">
 				<input type="text" class="textbox" name="tracker[url]" value="<?php echo $tracker['url']; ?>" />
 			</div>
@@ -41,7 +41,7 @@ if ($action == 'edit' && $pagination_enabled) {
 		<?php if ($action == 'edit'): ?>
 		
 		<div class="row">
-			<label>Click count</label>
+			<label><?php echo __('Click count'); ?></label>
 			<div class="field">
 				<p><?php echo $tracker['click_count']; ?></p>
 			</div>
@@ -50,7 +50,7 @@ if ($action == 'edit' && $pagination_enabled) {
 		<!-- .row -->
 		
 		<div class="row">
-			<label>First clicked on</label>
+			<label><?php echo __('First clicked on'); ?></label>
 			<div class="field">
 				<p><?php echo $tracker['first_clicked_on']; ?></p>
 			</div>
@@ -59,7 +59,7 @@ if ($action == 'edit' && $pagination_enabled) {
 		<!-- .row -->
 		
 		<div class="row">
-			<label>Last clicked on</label>
+			<label><?php echo __('Last clicked on'); ?></label>
 			<div class="field">
 				<p><?php echo $tracker['last_clicked_on']; ?></p>
 			</div>
@@ -72,13 +72,13 @@ if ($action == 'edit' && $pagination_enabled) {
 		<div class="row last">
 			<div class="field">
 				<p class="buttons">
-					<input type="submit" class="button" name="submit[save]" value="Save" />
-					<input type="submit" class="button" name="submit[edit]" value="Save and Continue Editing" />
+					<input type="submit" class="button" name="submit[save]" value="<?php echo __('Save'); ?>" />
+					<input type="submit" class="button" name="submit[edit]" value="<?php echo __('Save and Continue Editing'); ?>" />
 					<?php if ($action == 'edit'): ?>
-						<input type="button" class="button" id="reset-stats" value="Reset stats" />
+						<input type="button" class="button" id="reset-stats" value="<?php echo __('Reset stats'); ?>" />
 					<?php endif; ?>
 					or 
-					<a href="<?php echo get_url('plugin/link_tracker'); ?>" title="">Cancel</a>
+					<a href="<?php echo get_url('plugin/link_tracker'); ?>" title=""><?php echo __('Cancel'); ?></a>
 				</p>
 			</div>
 			<div class="clearfix"></div>
@@ -91,9 +91,9 @@ if ($action == 'edit' && $pagination_enabled) {
 <?php if ($action == 'edit' && isset($tracker_clicks) && !empty($tracker_clicks)): ?>
 
 <div id="clicks">
-	<h3>Clicks</h3>
+	<h3><?php echo __('Clicks'); ?></h3>
 	<div class="links">
-		<a href="<?php echo get_url('plugin/link_tracker/export_to_excel/'.$tracker['id']); ?>" title="">Export to Excel</a>
+		<a href="<?php echo get_url('plugin/link_tracker/export_to_excel/'.$tracker['id']); ?>" title=""><?php echo __('Export to Excel'); ?></a>
 	</div>
 	
 	<?php if ($pagination_enabled): ?>
@@ -110,10 +110,10 @@ if ($action == 'edit' && $pagination_enabled) {
 			$datetime = $date_2;
 		?>
 		<li class="<?php echo ($i % 2 == 0 ? 'even' : 'odd'); ?>">
-			<strong>Date / Time:</strong> <?php echo $datetime; ?> <br />
-			<strong>IP Address:</strong> <?php echo (empty($click->ip_address) ? 'n/a' : $click->ip_address); ?> <br />
-			<strong>User Agent:</strong> <?php echo (empty($click->user_agent) ? 'n/a' : $click->user_agent); ?> <br />
-			<strong>Referer:</strong> <?php echo (empty($click->referer) ? 'n/a' : $click->referer); ?> <br />
+			<strong><?php echo __('Date/Time'); ?>:</strong> <?php echo $datetime; ?> <br />
+			<strong><?php echo __('IP Address'); ?>:</strong> <?php echo (empty($click->ip_address) ? 'n/a' : $click->ip_address); ?> <br />
+			<strong><?php echo __('User Agent'); ?>:</strong> <?php echo (empty($click->user_agent) ? 'n/a' : $click->user_agent); ?> <br />
+			<strong><?php echo __('Referer'); ?>:</strong> <?php echo (empty($click->referer) ? 'n/a' : $click->referer); ?> <br />
 		</li>
 		<?php $i++; endforeach; ?>
 	</ul>

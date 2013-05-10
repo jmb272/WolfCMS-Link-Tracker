@@ -90,7 +90,7 @@ class LinkTrackerController extends PluginController
 		$action = isset($_POST['action']) ? $_POST['action'] : 'No action';
 		$valid_actions = array('No action', 'Delete', 'Reset stats');
 		if (!in_array($action, $valid_actions)) {
-			Flash::set('error', 'Invalid action selected.');
+			Flash::set('error', __('Invalid action selected.'));
 			redirect(get_url('plugin/link_tracker/index/'.$current_page));
 		}
 		
@@ -111,7 +111,7 @@ class LinkTrackerController extends PluginController
 						}
 					}
 				}
-				Flash::set('success', "$delete_count records deleted.");
+				Flash::set('success', __("$delete_count records deleted."));
 				break;
 				
 			case 'Reset stats': 
@@ -124,7 +124,7 @@ class LinkTrackerController extends PluginController
 						}
 					}
 				}
-				Flash::set('success', "$update_count records updated.");
+				Flash::set('success', __("$update_count records updated."));
 				break;
 		}
 		
@@ -537,14 +537,17 @@ class LinkTrackerController extends PluginController
 		// Verify settings.
 		$error = false;
 		
-		if (!is_numeric($settings['rows_per_page'])) { $error = 'Rows per page must be a numerical value.'; }
+		if (!is_numeric($settings['rows_per_page'])) { 
+			Flash::set('error', __('Rows per page must be a numerical value.'));
+			redirect(get_url('plugin/link_tracker/settings'));
+		}
 		
 		// Save settings.
 		if (!Plugin::setAllSettings($settings, 'link_tracker')) {
-			Flash::set('error', 'Unable to save settings.');
+			Flash::set('error', __('Unable to save settings.'));
 			redirect(get_url('plugin/link_tracker/settings'));
 		} else {
-			Flash::set('success', 'Settings have been saved!');
+			Flash::set('success', __('Settings have been saved!'));
 			
 			$submit = $_POST['submit'];
 			
