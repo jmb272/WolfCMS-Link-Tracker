@@ -1,0 +1,160 @@
+/* Misc */
+.clearfix { clear:both; }
+.right { float:right !important; }
+h3 { margin-top:25px; }
+p { font-size:13px; line-height:18px; color:#444; }
+/* Data table */
+div.data-table { 
+	position:relative; 
+	margin-top:20px;
+}
+div.data-table ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	color:#444;
+}
+
+div.data-table p {
+	color:#555;
+	margin:10px 0;
+	font-size:13px;
+}
+
+/* Data table head */
+div.data-table div.head { 
+	position:relative; 
+	background:#ececec url('images/table-head-bg.gif') repeat-x left top;
+	padding:7px 0;
+	border:1px solid #ddd;
+	border-radius:5px 5px 0 0;
+}
+div.data-table div.head ul li.col { 
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+}
+
+/* Data table body */
+div.data-table div.body { position:relative; }
+div.data-table div.body ul li div.col { float:left; }
+div.data-table div.body ul li {
+	background-color:#f9f9f9;
+	font-size:13px;
+	padding:7px 0;
+	border:1px solid #ddd;
+	border-top:0;
+	color:#666;
+}
+div.data-table div.body ul li:hover { background-color:#f4f4f4; }
+div.data-table div.body ul li div.col a {
+	font-weight:bold;
+	text-decoration:none;
+	color:#21759B;
+}
+div.data-table div.body ul li div.col a:hover { text-decoration:underline; }
+
+/* Pagination */
+div.pagination {
+	position:relative;
+	margin:15px 0;
+	font-size:13px;
+}
+div.pagination a {
+	text-decoration:none;
+	color:#333;
+}
+div.pagination a,
+div.pagination b {
+	background:#eee;
+	border:1px solid #ccc;
+	display:inline-block;
+	padding:3px 5px;
+	font-size:12px !important;
+}
+div.pagination b {
+	background:#555;
+	border-color:#222;
+	color:#fff;
+}
+
+/* Data table columns */
+.col.id { width:4%; padding-left:10px; }
+.col.name { width:32%; }
+.col.url { width:32%; }
+.col.total { width:13%; }
+.col.action { width:13%; }
+
+/* Forms */
+form { }
+form p {
+	margin:0 0 15px 0;
+	color:#444;
+	font-size:13px;
+}
+form div.row {
+	position:relative;
+	padding:10px 0;
+	padding-left:10px;
+	border-top:1px solid #eee;
+	font-size:13px !important;
+	color:#444;
+}
+form div.row.last { border-bottom:1px solid #eee; }
+form div.row div.field p {
+	margin:0;
+	color:#555;
+}
+form div.row div.field small {
+	display:block;
+	margin-top:5px;
+}
+form div.row label { 
+	float:left; 
+	width:20%; 
+}
+form div.row label span { color:#f00; font-weight:bold; }
+form div.row div.field {
+	float:right;
+	width:80%;
+}
+form div.row div.field input.textbox {
+	width:98%;
+	max-width:350px;
+    padding: 4px;
+	border:1px solid #ccc;
+}
+form input.button {
+	font-size:14px;
+}
+form select {
+	padding:3px 5px;
+	border:1px solid #ccc;
+}
+
+input#reset-stats { display:none; }
+
+
+
+/* Clicks */
+#clicks {
+	font-size:12px;
+	line-height:16px;
+}
+#clicks ul {
+	color:#444;
+}
+#clicks ul li {
+	padding:6px 0;
+	border-top:1px solid #ccc;
+	padding-left:10px;
+}
+#clicks ul li.odd {
+}
+#clicks ul li.even { 
+	background:#f4f4f4;
+}
+#clicks div.links {
+	position:relative;
+	margin:5px 0 15px 0;
+}
