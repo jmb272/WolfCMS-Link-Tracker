@@ -73,4 +73,31 @@ return array(
 	'Delete' => 'Delete',
 	'No action' => 'No action',
 	'Reset stats' => 'Reset stats',
+	
+	/* Settings */
+	'Outbound URL Slug' => 'Outbound URL Slug',
+	'Click Details' => 'Click Details',
+	'Store click details' => 'Store click details',
+	'Save # Click events' => 'Save # Click events',
+	'Lock IP Address' => 'Lock IP Address',
+	'Lock the Referer' => 'Lock the Referer',
+	'No' => 'No',
+	'Yes' => 'Yes',
+	'Recommended value' => 'Recommended value',
+	'Pagination' => 'Pagination',
+	'no limit' => 'no limit',
+	'Sorting' => 'Sorting',
+	'Sort by' => 'Sort by',
+	'Rows per page' => 'Rows per page',
+	'Paginate results' => 'Paginate results',
+	'Ascending' => 'Ascending',
+	'Descending' => 'Descending',
+	'No sort fields provided.' => 'No sort fields provided.',
+	'Split up results onto multiple pages.' => 'Split up results onto multiple pages.',
+	'Only count clicks originating from this site.' => 'Only count clicks originating from this site.',
+	'Only count one click on a link per IP address per day.' => 'Only count one click on a link per IP address per day.',
+	'Choose in what order to display the data on the index page.' => 'Choose in what order to display the data on the index page.',
+	'If you choose to store click details, everytime a link is clicked the IP Address, Referer and User Agent of the user is recorded.'
+		=> 'If you choose to store click details, everytime a link is clicked the IP Address, Referer and User Agent of the user is recorded.',
+	
 );
