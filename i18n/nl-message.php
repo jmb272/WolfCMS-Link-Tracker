@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Wolf CMS link-tracker plugin language file
+ * Wolf CMS skeleton plugin language file
  *
  * @package Translations
  */
 
 return array(
     'You have modified this page.  If you navigate away from this page without first saving your data, the changes will be lost.' => 'You have modified this page.  If you navigate away from this page without first saving your data, the changes will be lost.',
-  
+	
 	//----------------
 	'Add' => 'Toevoegen',
 	'Edit' => 'Bewerken',
@@ -53,4 +53,36 @@ return array(
 	'Delete' => 'Verwijderen',
 	'No action' => 'Geen actie',
 	'Reset stats' => 'Statistieken resetten',
+	
+	/* Settings form */
+	'Settings' => 'Instellingen',
+	'Outbound URL Slug' => 'Uitgaande URL',
+	'Click Details' => 'Meer details',
+	'If you choose to store click details, everytime a link is clicked the IP Address, Referer and User Agent of the user is recorded.' =>
+	'Bij het opslaan van klik details, zal voor elke aangeklikte link het IP-adres, Referer en User Agent van de bezoeker worden opgeslagen.',
+	'Store click details' => 'Klik details opslaan',
+	'Save # Click events' => 'Bewaar klikgebeurtenissen',
+    'no limit' => 'geen limiet',
+	'Lock IP Address' => 'IP-adres vastzetten',
+	'Only count one click on a link per IP address per day.' => 'Een klik per IP-adres per dag tellen',
+	'Lock IP Address' => 'IP-adressen vastzetten',
+	'No' => 'Nee',
+	'Yes' => 'Ja',
+	'Lock the Referer' => 'De Referer vastzetten',
+	'Only count clicks originating from this site.' => 'Alleen klikken afkomstig van deze site tellen',
+	'Referer' => 'Referer',
+	'Recommended value' => 'Aangeraden waarde',
+	'Pagination' => 'Paginatie',
+	'Split up results onto multiple pages.' => 'De resultaten over meerdere pagina\'s verdelen.',
+	'Paginate results' => 'Resulaat pagineren',
+	'Rows per page' => 'Rijen per pagina',
+	'Sorting' => 'Sorteren',
+	'Choose in what order to display the data on the index page.' => 'Kies de volgorder waarin de data word weergegeven',
+	'Sort by' => 'Sorteren op',
+	'No sort fields provided.' => 'Er zijn geen sorteervelden opgegeven',
+	'Save' => 'Bewaar',
+	'Save and Continue Editing' => 'Bewaar en Blijf Bewerken',
+	'Cancel' => 'Annuleer',
+	'You have modified this page.  If you navigate away from this page without first saving your data, the changes will be lost.' =>
+	'Je hebt deze pagina gewijzigd. Als je hiervandaan gaat zonder de pagina te bewaren zullen je wijzigingen verloren gaan.'
 );
