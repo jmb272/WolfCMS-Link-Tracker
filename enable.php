@@ -5,7 +5,7 @@ if (!defined('IN_CMS')) { exit; }
 
 // Create database.
 $create_sql = "
-CREATE TABLE IF NOT EXISTS `jb_link_trackers` (
+CREATE TABLE IF NOT EXISTS `".TABLE_PREFIX."jb_link_trackers` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(128) NOT NULL,
   `url` varchar(255) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS `jb_link_trackers` (
   `last_clicked_on` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-CREATE TABLE IF NOT EXISTS `jb_link_tracker_clicks` (
+CREATE TABLE IF NOT EXISTS `".TABLE_PREFIX."jb_link_tracker_clicks` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `link_tracker_id` int(11) unsigned NOT NULL,
   `user_agent` varchar(255) NOT NULL,

@@ -3,6 +3,7 @@
 .right { float:right !important; }
 h3 { margin-top:25px; }
 p { font-size:13px; line-height:18px; color:#444; }
+
 /* Data table */
 div.data-table { 
 	position:relative; 
