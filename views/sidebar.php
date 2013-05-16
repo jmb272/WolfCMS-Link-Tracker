@@ -4,6 +4,7 @@
 if (!defined('IN_CMS')) { exit; }
 
 ?>
+
 <p class="button">
 	<a href="<?php echo get_url('plugin/link_tracker/add'); ?>" title="Add tracker"> <img align="middle" src="<?php echo URI_PUBLIC; ?>wolf/icons/action-add-32.png" alt="" /> <?php echo __('Add tracker'); ?> </a>
 </p>
