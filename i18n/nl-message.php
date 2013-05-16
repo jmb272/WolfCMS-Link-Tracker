@@ -7,7 +7,6 @@
  */
 
 return array(
-    'You have modified this page.  If you navigate away from this page without first saving your data, the changes will be lost.' => 'You have modified this page.  If you navigate away from this page without first saving your data, the changes will be lost.',
 	
 	//----------------
 	'Add' => 'Toevoegen',
@@ -62,7 +61,7 @@ return array(
 	'Bij het opslaan van klik details, zal voor elke aangeklikte link het IP-adres, Referer en User Agent van de bezoeker worden opgeslagen.',
 	'Store click details' => 'Klik details opslaan',
 	'Save # Click events' => 'Bewaar klikgebeurtenissen',
-    'no limit' => 'geen limiet',
+        'no limit' => 'geen limiet',
 	'Lock IP Address' => 'IP-adres vastzetten',
 	'Only count one click on a link per IP address per day.' => 'Een klik per IP-adres per dag tellen',
 	'Lock IP Address' => 'IP-adressen vastzetten',
